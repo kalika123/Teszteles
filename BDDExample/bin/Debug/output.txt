@@ -1,0 +1,24 @@
+==STORY================================================================
+Withdraws_cash => OK
+========================================================================
+   Successful_withdrawing => OK
+      Given The_account_balance_is_100 => OK
+      Given the_card_is_valid => OK
+      Given the_machine_contains_enough_money => OK
+      Given the_Account_requests_20 => OK
+      Then the_ATM_should_dispense_20 => OK
+      Then the_account_balance_should_be_80 => OK
+      Then the_card_should_be_returned => OK
+   Failed_withdrawing => OK
+      Given The_account_balance_is_10 => OK
+      Given the_card_is_valid => OK
+      Given the_machine_contains_enough_money => OK
+      When the_Account_requests_20 => OK
+      Then the_ATM_should_not_give_any_money => OK
+      Then the_ATM_should_say_there_are_insufficient_funds => OK
+      Then the_account_balance_should_be_10 => OK
+      Then the_card_should_be_returned => OK
+   Card_has_been_disabled => OK
+      Given the_card_is_disabled => OK
+      When the_Account_requests_20 => OK
+      Then the_ATM_should_retain_the_card => OK

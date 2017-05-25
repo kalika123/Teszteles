@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LightBDD.MsTest2</name>
+    </assembly>
+    <members>
+        <member name="T:LightBDD.MsTest2.FeatureFixture">
+            <summary>
+            Base class for feature tests with MSTest framework.
+            It offers <see cref="P:LightBDD.MsTest2.FeatureFixture.Runner"/> property allowing to execute scenarios belonging to the feature class.
+            </summary>
+        </member>
+        <member name="P:LightBDD.MsTest2.FeatureFixture.Runner">
+            <summary>
+            Returns <see cref="T:LightBDD.Framework.IBddRunner"/> allowing to execute scenarios belonging to the feature class.
+            </summary>
+        </member>
+        <member name="M:LightBDD.MsTest2.FeatureFixture.#ctor">
+            <summary>
+            Default constructor initializing <see cref="P:LightBDD.MsTest2.FeatureFixture.Runner"/> for feature class instance.
+            </summary>
+        </member>
+        <member name="T:LightBDD.MsTest2.FeatureFixtureAttribute">
+            <summary>
+            Attribute that should be applied to all test classes representing feature tests.
+            It should be used for running LightBDD tests with MSTest testing framework.
+            </summary>
+        </member>
+        <member name="T:LightBDD.MsTest2.FeatureRunnerProvider">
+            <summary>
+            Class allowing to instantiate <see cref="T:LightBDD.Core.Extensibility.IFeatureRunner"/> that is being configured to work with MsTest framework.
+            </summary>
+        </member>
+        <member name="M:LightBDD.MsTest2.FeatureRunnerProvider.GetRunnerFor(System.Type)">
+            <summary>
+            Returns <see cref="T:LightBDD.Core.Extensibility.IFeatureRunner"/> for given <paramref name="featureType"/>.
+            </summary>
+            <param name="featureType">Feature type.</param>
+            <returns><see cref="T:LightBDD.Core.Extensibility.IFeatureRunner"/> object.</returns>
+        </member>
+        <member name="T:LightBDD.MsTest2.LightBddScope">
+            <summary>
+            LightBddScope class allowing to initialize and finalize LightBDD in MsTest framework.
+            
+            Example showing how to initialize LightBDD in MsTest framework:
+            <example>
+            [TestClass] class LightBddIntegration
+            {
+                [AssemblyInitialize] public static void Setup(TestContext testContext){ LightBddScope.Initialize(); }
+                [AssemblyCleanup] public static void Cleanup(){ LightBddScope.Cleanup(); }
+            }
+            </example>
+            </summary>
+        </member>
+        <member name="M:LightBDD.MsTest2.LightBddScope.Initialize">
+            <summary>
+            Initializes LightBddScope with default configuration.
+            </summary>
+        </member>
+        <member name="M:LightBDD.MsTest2.LightBddScope.Initialize(System.Action{LightBDD.Core.Configuration.LightBddConfiguration})">
+            <summary>
+            Initializes LightBddScope with configuration customized with <paramref name="onConfigure"/> action.
+            </summary>
+            <param name="onConfigure">Action allowing to customize LightBDD configuration.</param>
+        </member>
+        <member name="M:LightBDD.MsTest2.LightBddScope.Cleanup">
+            <summary>
+            Finalizes LightBddScope. It should be called after all tests have finished.
+            </summary>
+        </member>
+        <member name="T:LightBDD.MsTest2.ScenarioAttribute">
+            <summary>
+            Scenario attribute that should be used for MsTest framework tests, as a replacement for [TestMethod] attribute.
+            The ScenarioAttribute represents scenario test method.
+            </summary>
+        </member>
+        <member name="M:LightBDD.MsTest2.ScenarioAttribute.Execute(Microsoft.VisualStudio.TestTools.UnitTesting.ITestMethod)">
+            <summary>Performs scenario test.</summary>
+            <param name="testMethod"> TestMethod for execution. </param>
+            <returns> Test Results.</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,5 @@
+D:\SAPIENTIA\Teszteltes\Com.CodeProject.BDDExample\bin\Debug\Com.CodeProject.BDDExample.dll
+D:\SAPIENTIA\Teszteltes\Com.CodeProject.BDDExample\bin\Debug\Com.CodeProject.BDDExample.pdb
+D:\SAPIENTIA\Teszteltes\Com.CodeProject.BDDExample\bin\Debug\Be.Corebvba.Aubergine.dll
+D:\SAPIENTIA\Teszteltes\Com.CodeProject.BDDExample\obj\Debug\Com.CodeProject.BDDExample.dll
+D:\SAPIENTIA\Teszteltes\Com.CodeProject.BDDExample\obj\Debug\Com.CodeProject.BDDExample.pdb

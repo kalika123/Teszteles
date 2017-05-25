@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LightBDD.NUnit2</id>
+    <version>2.1.0.0</version>
+    <authors>Wojciech Kotlarski</authors>
+    <owners>Wojciech Kotlarski</owners>
+    <licenseUrl>http://opensource.org/licenses/BSD-2-Clause</licenseUrl>
+    <projectUrl>https://github.com/Suremaker/LightBDD</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Suremaker/LightBDD/master/logo/lightbdd.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Allows creating acceptance tests in developer friendly environment by offering LightBDD.Framework features on top of NUnit 2 testing framework.
+
+High level features:
+* user friendly bdd scenario definitions,
+* test execution tracing and time measurement, helpful during longer test execution,
+* Xml/Html/Plain text reports generation,
+* asynchronous execution support,
+* in-code LightBDD configuration.</description>
+    <summary>LightBDD Test Framework for NUnit 2</summary>
+    <releaseNotes>Rewritten NUnit 2 integration to support async test execution.</releaseNotes>
+    <copyright>Copyright © Wojciech Kotlarski 2013-2017</copyright>
+    <tags>bdd tdd testing framework behavior driven development acceptance criteria nunit nunit2</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="LightBDD.Framework" version="2.1.0" />
+        <dependency id="NUnit" version="2.6.4" />
+      </group>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="LightBDD.Framework" version="2.1.0" />
+        <dependency id="NUnit" version="2.6.4" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

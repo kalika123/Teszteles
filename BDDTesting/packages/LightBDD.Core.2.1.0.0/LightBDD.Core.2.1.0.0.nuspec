@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LightBDD.Core</id>
+    <version>2.1.0.0</version>
+    <authors>Wojciech Kotlarski</authors>
+    <owners>Wojciech Kotlarski</owners>
+    <licenseUrl>http://opensource.org/licenses/BSD-2-Clause</licenseUrl>
+    <projectUrl>https://github.com/Suremaker/LightBDD</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Suremaker/LightBDD/master/logo/lightbdd.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides LightBDD core features, such as:
+* asynchronous scenario execution with execution tracking and time measurement,
+* metadata discovery and formatting,
+* reporting,
+* in-code configuration,
+* progress notification,
+* framework extensibility.</description>
+    <summary>LightBDD Test Framework Core</summary>
+    <releaseNotes>Rewritten Core mechanisms to support multiple platforms (.NET Standard, .NET Framework), async test execution, extensibility and in-code configuration.</releaseNotes>
+    <copyright>Copyright © Wojciech Kotlarski 2013-2017</copyright>
+    <tags>bdd tdd testing framework behavior driven development acceptance criteria</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework="Unsupported0.0">
+        <dependency id="NETStandard.Library" version="1.6.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

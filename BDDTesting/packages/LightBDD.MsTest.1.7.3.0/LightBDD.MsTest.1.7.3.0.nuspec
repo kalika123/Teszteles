@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>LightBDD.MsTest</id>
+    <version>1.7.3.0</version>
+    <title>LightBDD.MsTest</title>
+    <authors>Wojciech Kotlarski</authors>
+    <owners>Wojciech Kotlarski</owners>
+    <licenseUrl>http://opensource.org/licenses/BSD-2-Clause</licenseUrl>
+    <projectUrl>https://github.com/Suremaker/LightBDD</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Suremaker/LightBDD/1.x/logo/lightbdd.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Allows creating acceptance tests in developer friendly environment.
+
+Features:
+* Native support for refactoring, code analysis (like finding unused methods), test running and all features that Visual Studio / Intellisense / Resharper offer during code development,
+* Easy to read scenario definitions,
+* Scenario steps execution tracking, usable during longer test execution,
+* Scenario steps execution time measurement,
+* Possibility to run steps with dedicated shared context, allowing to run tests safely in parallel,
+* Possibility to run parametrized steps with smart rules of inserting argument values to formatted step name,
+* Feature result summary available in XML, HTML or Plain text format,
+* Possibility to configure multiple result summaries in app.config file,
+* VS Project Item templates for feature test files,
+* MsTest integration.</description>
+    <summary>Lightweight Behavior Driven Development Test Framework for MsTest</summary>
+    <copyright>Copyright © Wojciech Kotlarski 2013-2017</copyright>
+    <language>en-US</language>
+    <tags>bdd tdd testing framework behavior driven development acceptance criteria mstest vstest</tags>
+    <dependencies>
+      <dependency id="LightBDD.Core" version="1.7.3" />
+    </dependencies>
+  </metadata>
+</package>

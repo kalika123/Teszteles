@@ -1,0 +1,2 @@
+D:\SAPIENTIA\Teszteltes\BDDTesting\BDDTesting\bin\Debug\BDDTesting.exe.config
+D:\SAPIENTIA\Teszteltes\BDDTesting\BDDTesting\obj\Debug\BDDTesting.csprojResolveAssemblyReference.cache

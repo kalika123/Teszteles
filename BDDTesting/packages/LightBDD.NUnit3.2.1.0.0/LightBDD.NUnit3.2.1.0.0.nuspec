@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LightBDD.NUnit3</id>
+    <version>2.1.0.0</version>
+    <title>LightBDD.NUnit3</title>
+    <authors>Wojciech Kotlarski</authors>
+    <owners>Wojciech Kotlarski</owners>
+    <licenseUrl>http://opensource.org/licenses/BSD-2-Clause</licenseUrl>
+    <projectUrl>https://github.com/Suremaker/LightBDD</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Suremaker/LightBDD/master/logo/lightbdd.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Allows creating acceptance tests in developer friendly environment by offering LightBDD.Framework features on top of NUnit 3 testing framework.
+
+High level features:
+* user friendly bdd scenario definitions,
+* test execution tracing and time measurement, helpful during longer test execution,
+* Xml/Html/Plain text reports generation,
+* cross-platform support (.NET Standard / .NET Framework),
+* asynchronous execution support,
+* in-code LightBDD configuration.</description>
+    <summary>LightBDD Test Framework for NUnit 3</summary>
+    <releaseNotes>Rewritten NUnit 3 integration to support multiple platforms (.NET Standard, .NET Framework) and async test execution.</releaseNotes>
+    <copyright>Copyright © Wojciech Kotlarski 2013-2017</copyright>
+    <tags>bdd tdd testing framework behavior driven development acceptance criteria nunit nunit3</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="LightBDD.Framework" version="2.1.0" />
+        <dependency id="NUnit" version="3.6.0" />
+      </group>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="LightBDD.Framework" version="2.1.0" />
+        <dependency id="NUnit" version="3.6.0" />
+      </group>
+      <group targetFramework="Unsupported0.0">
+        <dependency id="NETStandard.Library" version="1.6.0" />
+        <dependency id="LightBDD.Framework" version="2.1.0" />
+        <dependency id="NUnit" version="3.6.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LightBDD.Framework</id>
+    <version>2.1.0.0</version>
+    <title>LightBDD.Framework</title>
+    <authors>Wojciech Kotlarski</authors>
+    <owners>Wojciech Kotlarski</owners>
+    <licenseUrl>http://opensource.org/licenses/BSD-2-Clause</licenseUrl>
+    <projectUrl>https://github.com/Suremaker/LightBDD</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Suremaker/LightBDD/master/logo/lightbdd.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides LightBDD framework with features, such as:
+* native support for refactoring, code analysis (like finding unused methods), test running and all features that Visual Studio / Intellisense / Resharper offer during code development,
+* easy to read scenario definitions,
+* basic, extended (parameterized) and contextual scenario execution support,
+* method parameter formatting attributes,
+* step commenting,
+* Xml/Html/Plain text report generation.</description>
+    <summary>LightBDD Test Framework</summary>
+    <releaseNotes>Rewritten Framework mechanisms to function on top of LightBDD.Core and offer end-user common features.</releaseNotes>
+    <copyright>Copyright © Wojciech Kotlarski 2013-2017</copyright>
+    <tags>bdd tdd testing framework behavior driven development acceptance criteria</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="LightBDD.Core" version="2.1.0" />
+      </group>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="LightBDD.Core" version="2.1.0" />
+      </group>
+      <group targetFramework="Unsupported0.0">
+        <dependency id="NETStandard.Library" version="1.6.0" />
+        <dependency id="LightBDD.Core" version="2.1.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
